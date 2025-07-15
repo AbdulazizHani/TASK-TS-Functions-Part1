@@ -6,17 +6,21 @@
  */
 function printName(name: string): void {
   // write your code here
+  console.log(name);
 }
 
 /**
  * Task 2:
- * Create a function named `printAge`
- * - Accepts a "birthYear" parameter of type "number"
+ * Create a function named ` AccepprintAge`
+ * -ts a "birthYear" parameter of type "number"
  * - and prints (logs) the age on the screen
  * - Age = current year - birth
  */
 function printAge(birthYear: number): void {
   // write your code here
+  const currentyear = new Date().getFullYear();
+  const age = currentyear - birthYear;
+  console.log(age);
 }
 
 // example:
@@ -40,6 +44,15 @@ type LanguageType = "en" | "es" | "fr" | "tr";
 
 function printHello(name: string, language: LanguageType): void {
   // write your code here
+  if (language === "en") {
+    console.log(`Hello ${name}`);
+  } else if (language === "es") {
+    console.log(`Hola ${name}`);
+  } else if (language === "fr") {
+    console.log(`Bonjour ${name}`);
+  } else if (language === "tr") {
+    console.log(`Merhaba ${name}`);
+  }
 }
 
 // example:
@@ -56,6 +69,7 @@ printHello("Aziz", "fr"); // => "Bonjour Aziz"
  */
 function printMax(x: number, y: number) {
   // write your code here
+  console.log(x > y ? x : y);
 }
 
 // example:
